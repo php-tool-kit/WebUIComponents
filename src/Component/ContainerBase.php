@@ -6,7 +6,7 @@ abstract class ContainerBase extends ComponentBase implements ContainerInterface
 {
     protected array $children = [];
 
-    public function addChild(mixed ...$child): ContainerInterface
+    public function addChildren(mixed ...$child): ContainerInterface
     {
         $this->children = array_merge($this->children, $child);
         return $this;

@@ -15,7 +15,7 @@ interface ContainerInterface extends ComponentInterface
     /**
      * Retorna a fila de filhos.
      */
-    public function getChilds(): array;
+    public function getChildren(): array;
 
     /**
      * Retorna um filho específico de acordo com o índice dele na fila de filhos.
