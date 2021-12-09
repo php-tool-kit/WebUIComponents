@@ -1,0 +1,19 @@
+{
+    "name": "php-tool-kit/web-ui-components",
+    "description": "Componentes para cria\u0000\u0000o de interface de usu\u0000rio web",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PTK\\WUI\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Everton da Rosa",
+            "email": "everton3x@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
