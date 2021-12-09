@@ -2,7 +2,6 @@
 
 namespace PTK\Webface\Component;
 
-abstract class ElementBase extends ComponentBase
+abstract class ElementBase extends ComponentBase implements ElementInterface
 {
-    
 }

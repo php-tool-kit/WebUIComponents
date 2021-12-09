@@ -2,12 +2,11 @@
 
 namespace PTK\Webface\Component;
 
-abstract class ComponentBase implements ComponentInterfrace
+abstract class ComponentBase implements ComponentInterface
 {
-
     protected string|null $id = null;
 
-    public function setId(string $id): ComponentInterfrace
+    public function setId(string $id): ComponentInterface
     {
         $this->id = $id;
         return $this;

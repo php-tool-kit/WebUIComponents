@@ -5,12 +5,12 @@ namespace PTK\Webface\Component;
 /**
  * Um container é um componente que suporta conmponentes filhos, tal como um painel, por exemplo.
  */
-interface ContainerInterface extends ComponentInterfrace
+interface ContainerInterface extends ComponentInterface
 {
     /**
-     * Adiciona instâncias de ComponentInterface ou string à fila de filhos.
+     * Adiciona itens à fila de filhos.
      */
-    public function addChildren(ComponentInterfrace|string ...$child): ContainerInterface;
+    public function addChildren(mixed ...$child): ContainerInterface;
 
     /**
      * Retorna a fila de filhos.
@@ -23,9 +23,9 @@ interface ContainerInterface extends ComponentInterfrace
     public function getChild(int $index): ContainerInterface|string;
 
     /**
-     * Adiciona/substitui um componente ou string para um determinado índice na fila de filhos.
+     * Adiciona/substitui um item para um determinado índice na fila de filhos.
      */
-    public function addChildToIndex(ComponentInterfrace|string $child, int $index): ContainerInterface;
+    public function addChildToIndex(mixed $child, int $index): ContainerInterface;
 
     /**
      * Quantos filhos tem o container.
